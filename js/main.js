@@ -7,6 +7,7 @@ function setup() {
     bubbles[i] = new Bubble();
   }
 }
+
 function mousePressed() {
   bubbles.push(new Bubble(mouseX, mouseY));
 }
@@ -14,9 +15,9 @@ function mousePressed() {
 function mouseDragged() {
   bubbles.push(new Bubble(mouseX, mouseY));
 }
+
 function draw() {
   background(0);
-
   for (var i = 0; i < bubbles.length; i++) {
     bubbles[i].update();
     bubbles[i].display();
