@@ -59,3 +59,5 @@ function Bubble(x, y) {
     this.y = this.y + random(-5, 5);
   };
 }
+
+// color change code help from The Coding Train / Daniel Shiffman
